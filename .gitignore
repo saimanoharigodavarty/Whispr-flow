@@ -11,4 +11,5 @@ coverage/
 .env.*
 !.env.example
 implementation.md
+IMPLEMENTATION_STATUS.md
 
