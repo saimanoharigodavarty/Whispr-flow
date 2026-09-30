@@ -17,18 +17,21 @@ Gate 0 — Engineering foundation (`in progress`)
 - Strict TypeScript, ESLint, Prettier, Vitest, and Turbo tasks configured.
 - Initial verification-state and event-envelope contract tests added.
 - Compatible TypeScript and pnpm versions pinned.
+- SQLite/Drizzle database package added using the stable better-sqlite3 driver.
+- WAL, foreign-key enforcement, and busy-timeout configuration added.
+- Transactional, versioned database migrations added.
+- Initial project and append-only domain-event tables added.
+- Database migration and real ORM persistence tests added.
 
 ## Passing gates
 
 - `pnpm lint`
 - `pnpm typecheck`
-- `pnpm test` — 2 tests passing
+- `pnpm test` — 4 tests passing
 - `pnpm build`
 
 ## Gate 0 work remaining
 
-- Add SQLite and Drizzle database package.
-- Add transactional, versioned migrations.
 - Add structured logging with secret-safe defaults.
 - Add renderer error boundary and failure UI.
 - Add continuous integration workflow.
